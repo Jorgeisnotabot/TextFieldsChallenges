@@ -49,6 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cashTextField" destination="djW-j1-dYl" id="xpu-0p-UZz"/>
                         <outlet property="zipCodeTextField" destination="dyv-D8-5WJ" id="C9x-oj-rA4"/>
                     </connections>
                 </viewController>

@@ -12,14 +12,18 @@ class ViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var zipCodeTextField: UITextField!
+    @IBOutlet weak var cashTextField: UITextField!
     
+    // MARK: Properties
     let zipCodeDelegate = ZipCodeTextFieldDelegate()
+    let cashDelegate = CashTextFieldDelegate()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Set the text field delegate for the textfield
         self.zipCodeTextField.delegate = zipCodeDelegate
+        self.cashTextField.delegate = cashDelegate
     }
 
     override func didReceiveMemoryWarning() {
